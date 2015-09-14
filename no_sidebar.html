@@ -1,0 +1,140 @@
+<!--
+Author: http://smartdesignblog.pl
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script src="js/libs/DoubleTapToGo.js"></script>
+        <script>
+            $( function()
+            {
+                $( '#menu li:has(ul)' ).doubleTapToGo();
+            });
+        </script>
+    </head>
+    <body>
+    <!-- Header -->
+        <div id="menu-fixed"></div>
+        <header>
+            <div class="logo">
+                <a href="#"><h1 class="sitename">SMART DESIGN</h1></a>
+                <h6 class="sitedescription">Just another HTML5 & CSS3 responsive website template</h6>
+            </div>
+        </header>
+    <!-- Menu -->
+        <nav id="menu" role="navigation">
+            <a href="#menu" title="Pokaż menu">Pokaż menu</a>
+            <a href="#" title="Ukryj menu">Ukryj menu</a>
+            <ul>
+                <li><a href="/">Strona domowa</a></li>
+                <li><a href="/">Blog</a>
+                    <ul>
+                        <li><a href="/">Design</a></li>
+                        <li><a href="/">HTML</a></li>
+                        <li><a href="/">CSS</a></li>
+                        <li><a href="/">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Typy</a>
+                    <ul>
+                        <li><a href="index.html">Grid</a></li>
+                        <li><a href="right_sidebar.html">Sidebar</a></li>
+                        <li><a href="no_sidebar.html">Full</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">O mnie</a></li>
+            </ul>
+        </nav>
+    <!-- Kontener -->
+        <div id="content">
+        <!-- Post -->
+            <div id="post" class="post_no_sidebar">
+                <header id="post_tittle" class="post_tittle_no_sidebar">
+                    <div class="tittle">
+                        <a href="#"><h2 class="tittlename">To jest przykładowy tytuł, który wkrótce zostanie wypełniony</h2></a>
+                    </div>
+                    <div class="comment">
+                        <a href="#"><span class="comment_icon">&#59160;</span></a>
+                    </div>
+                    <div class="date">
+                        <a href="#"><time>2013:09:03</time></a>
+                    </div>
+                    <div class="author">
+                        Opublikowane przez: <a href="#"><span class="author_name">SMARTDESIGN</span></a>
+                    </div>
+                </header>
+                <article class="post_article_no_sidebar">
+                    <p class="article">
+                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida.
+                    </p>
+                </article>
+                <aside id="post_footer" class="post_footer_no_sidebar">
+                    <a href="#"><div id="social" class="twitter"></div></a>
+                    <a href="#"><div id="social" class="sharethis"></div></a>
+                    <a href="#"><div id="social" class="ember"></div></a>
+                                <div class="categoryicon">&#128193;</div>
+                                <div class="category"><a href="#"><span class="categoryname">Warsztat</span></a></div>
+                    <a href="#"><div id="button">Czytaj więcej</div></a>
+                </aside>
+            </div>
+        <!-- Komentarze -->
+            <div id="reply" class="reply_no_sidebar">
+                <form action="#" method="POST" class="comment-wrapper">
+                    <label for="nickname">Nick </label>
+                    <input id="nickname" placeholder="Anonim" type="text" required><br>
+                    <label for="email">Email </label>
+                    <input id="email" placeholder="anonim@smartdesignblog.pl" type="text" required><br>
+                    <label for="message">Komentarz </label>
+                    <textarea placeholder="Zostaw komentarz..." required></textarea><br>
+                    <button type="submit">Wyślij</button>
+                    <button type="reset">Reset</button>
+                </form>
+              
+            </div>
+       </div>
+    <!-- Widgets -->
+        <div id="widgets">
+            <div class="widgetsbutton">
+            </div>
+        </div>
+        <div id="widgetsarea">
+            <div id="widgetsarea_one">
+                <ul>
+                    <li>Kategoria pierwsza</li>
+                    <li>Kategoria druga</li>
+                    <li>Kategoria trzecia</li>
+                </ul>
+            </div>
+            <div id="widgetsarea_two">
+                <ul>
+                    <li>Kategoria pierwsza</li>
+                    <li>Kategoria druga</li>
+                    <li>Kategoria trzecia</li>
+                </ul>
+            </div>
+            <div id="widgetsarea_three">
+                <ul>
+                    <li>Kategoria pierwsza</li>
+                    <li>Kategoria druga</li>
+                    <li>Kategoria trzecia</li>
+                </ul>
+            </div>
+        </div>
+    <!-- Footer -->
+        <footer>
+            <span class="copyright">Copyright © 2013 smartdesignblog.pl Wszystkie prawa zastrzeżone</span>
+            <span class="template_author">Designed by <a href="http://smartdesignblog.pl" class="smartdesignblog">smartdesignblog.pl</a></span>
+            <div class="mobile_footer">
+                Designed by <a href="http://smartdesignblog.pl" class="smartdesignblog">smartdesignblog.pl</a>
+            </div>
+        </footer>
+    </body>
+</html>
